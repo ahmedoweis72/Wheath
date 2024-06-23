@@ -81,6 +81,13 @@ function weather(location) {
             wind.innerHTML = `<img src="Images/icon-wind.png" alt="">` + res.current.wind_mph;
             wind_dir.innerHTML = `<img src="Images/icon-compass.png" alt="">` + res.current.wind_dir;
 
+              tempmddl.innerHTML=res.forecast.forecastday[1].day.maxtemp_c+"c";
+            tempmddl2.innerHTML = res.forecast.forecastday[1].day.mintemp_c+"c";
+            tempmddl3.innerHTML = res.forecast.forecastday[1].day.condition.text;
+            tempmddl4.innerHTML = res.forecast.forecastday[2].day.maxtemp_c+"c";
+            tempmddl5.innerHTML = res.forecast.forecastday[2].day.mintemp_c+"c";
+            tempmddl6.innerHTML = res.forecast.forecastday[2].day.condition.text;
+
 
         }
     })
